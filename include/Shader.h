@@ -21,7 +21,8 @@
 #ifndef DDG_SHADER_H
 #define DDG_SHADER_H
 
-#include <GLUT/glut.h>
+#include </usr/include/GL/glut.h>
+//#include <GLUT/glut.h>
 #include <string>
 
 namespace DDG

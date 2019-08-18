@@ -10,7 +10,7 @@
 #ifndef DDG_VIEWER_H
 #define DDG_VIEWER_H
 
-#include <GLUT/glut.h>
+#include </usr/include/GL/glut.h>
 #include "Mesh.h"
 #include "Camera.h"
 #include "Shader.h"
