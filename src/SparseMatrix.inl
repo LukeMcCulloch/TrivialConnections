@@ -5,8 +5,10 @@
 #include <complex>
 using namespace std;
 
-#include <SuiteSparseQR.hpp>
-#include <umfpack.h>
+#include </usr/include/suitesparse/SuiteSparseQR.hpp>
+//#include <SuiteSparseQR.hpp>
+#include </usr/include/suitesparse/umfpack.h>
+//#include <umfpack.h>
 
 #include "Real.h"
 #include "Complex.h"

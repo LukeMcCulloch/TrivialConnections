@@ -13,7 +13,9 @@
 #ifndef DDG_LINEARSOLVERCONTEXT
 #define DDG_LINEARSOLVERCONTEXT
 
-#include <cholmod.h>
+#include </usr/include/suitesparse/cholmod.h>
+//#include <suitesparse>
+//#include <cholmod.h>
 //#include <suitesparse/CHOLMOD/Include/cholmod.h>
 
 namespace DDG

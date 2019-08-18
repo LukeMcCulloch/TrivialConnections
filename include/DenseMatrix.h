@@ -30,7 +30,11 @@
 #ifndef DDG_DENSEMATRIX_H
 #define DDG_DENSEMATRIX_H
 
-#include <cholmod.h>
+#include <iostream>
+//#include <ostream>
+#include </usr/include/suitesparse/cholmod.h>
+//#include <suitesparse>
+//#include <cholmod.h>
 //#include <suitesparse/CHOLMOD/Include/cholmod.h>
 #include "Types.h"
 

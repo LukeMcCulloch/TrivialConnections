@@ -31,6 +31,8 @@ CC = g++
 LD = g++
 CFLAGS = -O3 -Wall -Werror -ansi -pedantic  $(DDG_INCLUDE_PATH) -I./include -I./src
 LFLAGS = -O3 -Wall -Werror -ansi -pedantic $(DDG_LIBRARY_PATH)
+# CFLAGS = -O3 -Wall -Werror -ansi -pedantic  -I./include -I./src
+# LFLAGS = -O3 -Wall -Werror -ansi -pedantic 
 LIBS = $(DDG_OPENGL_LIBS) $(DDG_SUITESPARSE_LIBS) $(DDG_BLAS_LIBS)
 
 ########################################################################################

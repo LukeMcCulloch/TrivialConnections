@@ -9,8 +9,10 @@
 #ifndef DDG_TYPES_H
 #define DDG_TYPES_H
 
-#include <cholmod.h>
-#include <suitesparse/CHOLMOD/Include/cholmod.h>
+#include </usr/include/suitesparse/cholmod.h>
+//#include <suitesparse>
+//#include <cholmod.h>
+//#include <suitesparse/CHOLMOD/Include/cholmod.h>
 #include <map>
 #include <vector>
 
