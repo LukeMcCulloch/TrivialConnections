@@ -1,6 +1,10 @@
 # TrivialConnections
 Discrete Differential Geometry Exterior Calculus:  Keenan Crane's Trivial Connections Paper
 
+### Usage, e.g.
+
+make <br/>
+./connection ./meshes/torus.obj
 
 ### converting the code from mac to linux:
 
@@ -34,3 +38,4 @@ to be
 #include <GL/glew.h>
 
 to Viewer.h and Shader.h
+
