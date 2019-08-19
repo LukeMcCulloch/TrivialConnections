@@ -16,6 +16,8 @@ make <br/>
  * to be <br/>
    #include <suitesparse/SuiteSparseQR.hpp> <br/>
    #include <suitesparse/umfpack.h>
+   
+ * Change UF_long to SuiteSparse_long
 
 
 #include <suitesparse/cholmod.h>
