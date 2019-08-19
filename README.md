@@ -17,6 +17,9 @@ to be
 
 #include <suitesparse/cholmod.h>
 
+ * Also (probably because I dropped -lmetis?)
+ I needed to add "-lumfpack -lamd"
+ to the linker for umf libs.
 
  * GL changed
 
