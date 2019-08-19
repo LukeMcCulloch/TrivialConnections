@@ -9,14 +9,13 @@ make <br/>
 ### converting the code from mac to linux:
 
  * suitesparse Changed: <br/>
-//#include <SuiteSparseQR.hpp> <br/>
-//#include <umfpack.h>
+   #include <SuiteSparseQR.hpp> <br/>
+   #include <umfpack.h> <br/>
+   #include <cholmod.h>
 
-#include <cholmod.h>
-
-to be <br/>
-#include <suitesparse/SuiteSparseQR.hpp> <br/>
-#include <suitesparse/umfpack.h>
+ * to be <br/>
+   #include <suitesparse/SuiteSparseQR.hpp> <br/>
+   #include <suitesparse/umfpack.h>
 
 
 #include <suitesparse/cholmod.h>
@@ -25,17 +24,13 @@ to be <br/>
  I needed to add "-lumfpack -lamd"
  to the linker for umf libs.
 
- * GL changed
+ * GL changed <br/>
+   #include <GLUT/glut.h>
 
-#include <GLUT/glut.h>
+ * to be  <br/>
+   #include <GL/glut.h>
 
-to be
-
-#include <GL/glut.h>
-
- * Added glew include and "-lGLEW " link
-
-#include <GL/glew.h>
-
-to Viewer.h and Shader.h
+ * Added glew include and "-lGLEW " link  <br/>
+   #include <GL/glew.h>  <br/>
+   to Viewer.h and Shader.h
 
