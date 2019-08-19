@@ -4,14 +4,14 @@ Discrete Differential Geometry Exterior Calculus:  Keenan Crane's Trivial Connec
 
 ### converting the code from mac to linux:
 
- * suitesparse Changed:
-//#include <SuiteSparseQR.hpp>
+ * suitesparse Changed: <br/>
+//#include <SuiteSparseQR.hpp> <br/>
 //#include <umfpack.h>
 
 #include <cholmod.h>
 
-to be 
-#include <suitesparse/SuiteSparseQR.hpp>
+to be <br/>
+#include <suitesparse/SuiteSparseQR.hpp> <br/>
 #include <suitesparse/umfpack.h>
 
 
