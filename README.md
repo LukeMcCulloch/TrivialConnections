@@ -2,8 +2,7 @@
 Discrete Differential Geometry Exterior Calculus:  Keenan Crane's Trivial Connections Paper
 
 
-### converting the code 
-from mac to linux:
+### converting the code from mac to linux:
 
  * suitesparse Changed:
 //#include <SuiteSparseQR.hpp>
@@ -26,3 +25,9 @@ to be
 to be
 
 #include <GL/glut.h>
+
+ * Added glew include and "-lGLEW " link
+
+#include <GL/glew.h>
+
+to Viewer.h and Shader.h
