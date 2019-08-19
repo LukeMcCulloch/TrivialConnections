@@ -39,11 +39,27 @@ namespace DDG
    
    void Viewer :: init( void )
    {
+      std::cout << "   ------------------" << std::endl;
+      std::cout << "   restoreViewerState" << std::endl;
       restoreViewerState();
+      std::cout << "   ------------------" << std::endl;
+      std::cout << "   initGLUT" << std::endl;
       initGLUT();
+      std::cout << "   ------------------" << std::endl;
+      std::cout << "   glewInit" << std::endl;
+      if (glewInit() != GLEW_OK)
+         throw std::runtime_error("glewInit failed");
+      std::cout << "   ------------------" << std::endl;
+      std::cout << "   setGL" << std::endl;
       setGL();
+      std::cout << "   ------------------" << std::endl;
+      std::cout << "   initGLSL" << std::endl;
       initGLSL();
+      std::cout << "   ------------------" << std::endl;
+      std::cout << "   updateDisplayList" << std::endl;
       updateDisplayList();
+      std::cout << "   ------------------" << std::endl;
+      std::cout << "   glutMainLoop" << std::endl;
       glutMainLoop();
    }
    
@@ -103,7 +119,11 @@ namespace DDG
    
    void Viewer :: initGLSL( void )
    {
+      std::cout << "   ------------------" << std::endl;
+      std::cout << "   shaders loadVertex" << std::endl;
       shader.loadVertex( "shaders/vertex.glsl" );
+      std::cout << "   ------------------" << std::endl;
+      std::cout << "   shaders loadFragment" << std::endl;
       shader.loadFragment( "shaders/fragment.glsl" );
    }
    
