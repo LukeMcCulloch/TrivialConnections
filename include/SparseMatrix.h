@@ -35,10 +35,7 @@
 #define DDG_SPARSE_MATRIX_H
 
 #include <iostream>
-#include </usr/include/suitesparse/cholmod.h>
-//#include <suitesparse>
-//#include <cholmod.h>
-//#include <suitesparse/CHOLMOD/Include/cholmod.h>
+#include <suitesparse/cholmod.h>
 #include <vector>
 #include <map>
 #include "Types.h"

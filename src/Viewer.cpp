@@ -558,13 +558,17 @@ namespace DDG
       
       Quaternion r = camera.currentRotation();
       eye = r.conj() * eye * r;
-      GLint uniformEye = glGetUniformLocation( shader, "eye" );
-      glUniform3f( uniformEye, eye[1], eye[2], eye[3] );
+      //GLint uniformEye = glGetUniformLocation( shader, "eye" );
+      //glUniform3f( uniformEye, eye[1], eye[2], eye[3] );
+      
+      //glColor3f( uniformEye, eye[1], eye[2], eye[3] );
       
       Quaternion light = Vector( -1., 1., -2. );
       light = r.conj() * light * r;
-      GLint uniformLight = glGetUniformLocation( shader, "light" );
-      glUniform3f( uniformLight, light[1], light[2], light[3] );
+      //GLint uniformLight = glGetUniformLocation( shader, "light" );
+      //glUniform3f( uniformLight, light[1], light[2], light[3] );
+      
+      //glColor3f( uniformLight, light[1], light[2], light[3] );
       
       camera.setView();
       callDisplayList();

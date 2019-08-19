@@ -5,9 +5,9 @@
 #include <complex>
 using namespace std;
 
-#include </usr/include/suitesparse/SuiteSparseQR.hpp>
+#include <suitesparse/SuiteSparseQR.hpp>
+#include <suitesparse/umfpack.h>
 //#include <SuiteSparseQR.hpp>
-#include </usr/include/suitesparse/umfpack.h>
 //#include <umfpack.h>
 
 #include "Real.h"

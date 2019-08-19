@@ -21,7 +21,18 @@
 #ifndef DDG_SHADER_H
 #define DDG_SHADER_H
 
-#include </usr/include/GL/glut.h>
+//#ifndef GL_GLEXT_LEGACY
+//#define GL_GLEXT_LEGACY
+//#endif
+
+
+#include <GL/glew.h>
+
+//#include <GL/glcorearb.h> // glGetUniformLocation
+//#include <GL/gl_mangle.h> // glGetUniformLocation
+//#include <GL/glext.h>  // glGetUniformLocation
+
+#include <GL/glut.h>
 //#include <GLUT/glut.h>
 #include <string>
 

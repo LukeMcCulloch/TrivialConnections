@@ -1,7 +1,7 @@
 #include <map>
 using namespace std;
 
-#include </usr/include/suitesparse/SuiteSparseQR.hpp>
+#include <suitesparse/SuiteSparseQR.hpp>
 
 #include "LinearSystem.h"
 #include "LinearContext.h"

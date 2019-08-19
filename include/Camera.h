@@ -18,7 +18,7 @@
 #include <GL/glu.h>
 #include <GL/glut.h>
 #else
-#include </usr/include/GL/glut.h>
+#include <GL/glut.h>
 #endif
 
 namespace DDG

@@ -10,7 +10,16 @@
 #ifndef DDG_VIEWER_H
 #define DDG_VIEWER_H
 
-#include </usr/include/GL/glut.h>
+
+#include <GL/glew.h>
+
+//#include <GL/gl.h>
+//#include <GL/glu.h>
+//#include <GL/glcorearb.h> // glGetUniformLocation
+//#include <GL/gl_mangle.h> // glGetUniformLocation
+//#include <GL/glext.h>  // glGetUniformLocation
+
+#include <GL/glut.h>
 #include "Mesh.h"
 #include "Camera.h"
 #include "Shader.h"
