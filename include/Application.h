@@ -27,6 +27,10 @@ namespace DDG
    public:
       bool solveForConneciton(Mesh& mesh)
       {
+         std::cout << "      ------------------" << std::endl;
+         std::cout << "      computing connection" << std::endl;
+
+
          bool ok = checkGaussBonnet(mesh);
          if( not ok )
          {
@@ -34,11 +38,17 @@ namespace DDG
             return false;
          }
          
+
+         std::cout << "      ------------------" << std::endl;
+         std::cout << "      computing trivial holonomy" << std::endl;
          int t0 = clock();
          solveForTrivialHolonomy(mesh);
          int t1 = clock();
          cout << "[trivial] time: " << seconds( t0, t1 ) << "s" << "\n";
 
+
+         std::cout << "      ------------------" << std::endl;
+         std::cout << "      computing nontrivial holonomy" << std::endl;
          t0 = clock();
          solveForNonTrivialHolonomy(mesh);
          t1 = clock();

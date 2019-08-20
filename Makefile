@@ -15,7 +15,7 @@ DDG_INCLUDE_PATH      =
 DDG_LIBRARY_PATH      = 
 DDG_BLAS_LIBS         = -llapack -lblas -lgfortran 
 DDG_SUITESPARSE_LIBS  = -lspqr -lcholmod -lcolamd -lccolamd -lcamd -lamd -lm -lumfpack -lamd #-lmetis 
-DDG_OPENGL_LIBS       = -lGL -lGLU -lglut -lGLEW #-lX11
+DDG_OPENGL_LIBS       = -lGL -lGLU -lglut -lGLEW -lX11
 
 # # Windows / Cygwin
 # DDG_INCLUDE_PATH      = -I/usr/include/opengl -I/usr/include/suitesparse

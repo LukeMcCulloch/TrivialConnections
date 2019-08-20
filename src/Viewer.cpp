@@ -457,10 +457,14 @@ namespace DDG
    void Viewer :: mProcess( void )
    {
       Application app;
+      std::cout << "   ------------------" << std::endl;
+      std::cout << "   Solve for connection" << std::endl;
       bool ok = app.solveForConneciton(mesh);
       
       if( ok )
       {
+         std::cout << "   ------------------" << std::endl;
+         std::cout << "   generate direction field" << std::endl;
          DirectionField field;
          field.generate( mesh, angle );
       }

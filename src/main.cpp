@@ -27,7 +27,7 @@ int main( int argc, char** argv )
    viewer.mesh.init();
    
    std::cout << "--------- ---------" << std::endl;
-   std::cout << "instatiate direction field" << std::endl;
+   std::cout << "create direction field object" << std::endl;
    DirectionField field;
    
    std::cout << "--------- ---------" << std::endl;
