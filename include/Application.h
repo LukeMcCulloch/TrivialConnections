@@ -25,7 +25,7 @@ namespace DDG
    class Application
    {
    public:
-      bool solveForConneciton(Mesh& mesh)
+      bool solveForConnection(Mesh& mesh)
       {
          std::cout << "      ------------------" << std::endl;
          std::cout << "      computing connection" << std::endl;

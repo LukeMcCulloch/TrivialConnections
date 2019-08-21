@@ -459,7 +459,7 @@ namespace DDG
       Application app;
       std::cout << "   ------------------" << std::endl;
       std::cout << "   Solve for connection" << std::endl;
-      bool ok = app.solveForConneciton(mesh);
+      bool ok = app.solveForConnection(mesh);
       
       if( ok )
       {
