@@ -17,10 +17,10 @@ make <br/>
    #include <suitesparse/SuiteSparseQR.hpp> <br/>
    #include <suitesparse/umfpack.h>
    
- * Change UF_long to SuiteSparse_long
+ * Change UF_long to SuiteSparse_long <br/>
    #include <suitesparse/cholmod.h>
 
- * Also (probably because I dropped -lmetis?)
+ * Also, 
  I needed to add "-lumfpack -lamd"
  to the linker for umf libs.
 
