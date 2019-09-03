@@ -43,6 +43,10 @@ namespace DDG
       static unsigned counter;
       static std::vector<int> indices;
       static std::vector<unsigned> age;
+
+
+      static double maxDistance;
+      // max geodesic distance
       
    protected:
       // init
@@ -73,6 +77,11 @@ namespace DDG
       static void mVectorField( void );
       static void mGenerators( void );
       static void mSelected( void );
+
+
+      static void mProcess2( void );
+      static void mIncreaseStep( void );
+      static void mDecreaseStep( void );
       
       static void mIncreaseIndexG( void );
       static void mDecreaseIndexG( void );
@@ -110,7 +119,12 @@ namespace DDG
          menuIncreaseIndex4,
          menuDecreaseIndex4,
          menuIncreaseIndex5,
-         menuDecreaseIndex5
+         menuDecreaseIndex5,
+
+         // geodesics
+         menuProcess2,
+         menuIncreaseStep,
+         menuDecreaseStep
       };
       
       // draw routines
@@ -153,6 +167,10 @@ namespace DDG
       
       static Shader shader;
       // shader used to determine appearance of surface
+
+      static double step;
+      static double delta;
+      // fairing time step
    };
 }
 

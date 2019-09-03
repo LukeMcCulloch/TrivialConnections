@@ -37,6 +37,12 @@ namespace DDG
    std::vector<int> Viewer::indices;
    std::vector<unsigned> Viewer::age = std::vector<unsigned>(AGE_SIZE, 0);
    
+
+   // declare static member geodesic vars
+   double Viewer::maxDistance = 1.0;
+   double Viewer::step = 1.0;
+   double Viewer::delta = 0.1;
+
    void Viewer :: init( void )
    {
       std::cout << "   ------------------" << std::endl;
@@ -109,6 +115,7 @@ namespace DDG
       int mainMenu = glutCreateMenu( Viewer::menu );
       glutSetMenu( mainMenu );
       glutAddMenuEntry( "[space] Process Mesh", menuProcess    );
+      glutAddMenuEntry( "[g] Geodesic Distance", menuProcess2    );
       glutAddMenuEntry( "[r] Reset Mesh",       menuResetMesh  );
       glutAddMenuEntry( "[w] Write Mesh",       menuWriteMesh  );
       glutAddMenuEntry( "[\\] Screenshot",      menuScreenshot );
@@ -133,6 +140,9 @@ namespace DDG
       {
          case( menuProcess ):
             mProcess();
+            break;
+         case( menuProcess2 ):
+            mProcess2();
             break;
          case( menuResetMesh ):
             mResetMesh();
@@ -469,6 +479,32 @@ namespace DDG
          field.generate( mesh, angle );
       }
       
+      updateDisplayList();
+   }
+   
+   //
+   //******************************************
+   // geodesic distance
+   void Viewer :: mIncreaseStep( void )
+   {
+      step += delta;
+      std::cout << "Step = " << step << std::endl;
+   }
+
+   void Viewer :: mDecreaseStep( void )
+   {
+      step -= delta;
+      std::cout << "Step = " << step << std::endl;
+   }
+
+   void Viewer :: mProcess2( void )
+   {
+      Application app;
+      std::cout << "   ------------------" << std::endl;
+      std::cout << "   Solve geodesic distance here" << std::endl;
+      maxDistance= app.solveForGeodesic(step, mesh);
+      
+      std::cout << "   MaxDist = " << maxDistance << std::endl;
       updateDisplayList();
    }
    

@@ -38,9 +38,14 @@ namespace DDG
       
       VertexIter parent;
       // parent in tree-cotree decomposition
+
+      double distance;
+      //geodesic distance
       
-      Vertex() : index(0), tag(false), potential(0.0), singularity(0.0)
+      Vertex() : index(0), tag(false), potential(0.0), singularity(0.0), distance(0.0) 
       { }
+
+
       
       double area( void ) const;
       // returns the barycentric area associated with this vertex
