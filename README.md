@@ -8,29 +8,29 @@ make <br/>
 
 ### converting the code from mac to linux:
 
- * suitesparse Changed: <br/>
+ suitesparse Changed from this: <br/>
    #include <SuiteSparseQR.hpp> <br/>
    #include <umfpack.h> <br/>
    #include <cholmod.h>
 
- * to be <br/>
+ to this: <br/>
    #include <suitesparse/SuiteSparseQR.hpp> <br/>
    #include <suitesparse/umfpack.h>
    
- * Change UF_long to SuiteSparse_long <br/>
+Change UF_long to SuiteSparse_long <br/>
    #include <suitesparse/cholmod.h>
 
- * Also, 
+lso, 
  I needed to add "-lumfpack -lamd"
  to the linker for umf libs.
 
- * GL changed <br/>
+ GL changed from this<br/>
    #include <GLUT/glut.h>
 
- * to be  <br/>
+to this  <br/>
    #include <GL/glut.h>
 
- * Added glew include and "-lGLEW " link  <br/>
+And added glew include and "-lGLEW " link  <br/>
    #include <GL/glew.h>  <br/>
    to Viewer.h and Shader.h
 
